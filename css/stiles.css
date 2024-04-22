@@ -1,0 +1,16 @@
+header .nav-item:hover{
+    box-shadow: 0 0 10px #000003;
+    border-radius: 5px;
+}
+
+.nav-item.boton-iniciar-sesion{
+    background-color: #181419;
+}
+
+.boton-iniciar-sesion:hover{
+    background-color: #9f3647;
+}
+
+.nav-item.sombreado-texto{
+    background-color: #181419;
+}

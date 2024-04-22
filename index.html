@@ -12,18 +12,30 @@
 <body>
 
     <header>
-        <nav>
-            <a href="#"><i class="fa fa-film" aria-hidden="true"></i>
-            <span>GranjaPelis</span></a>
-            <ul>
-                <li><a href="#tendencias">Tendencias</a></li>
-                <li><a href="./pages/registrarse.html">Registrarse</a></li>
-                <li><a href="./pages/iniciosesion.html">Iniciar Sesión</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg" style="background-color:#9f3647;">
+            <div class="container-fluid my-4">
+              <a class="navbar-brand mx-5 text-light" href="#">
+                <i class="fa fa-film" aria-hidden="true"></i>
+                <span>GranjaPelis</span></a>
+              </a>
+              <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#tendencias">Tendencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./pages/registrarse.html">Registrarse</a>
+                    </li>
+                    <li class="nav-item boton-iniciar-sesion">
+                        <a class="nav-link text-light" href="./pages/iniciosesion.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
         </nav>
     </header>
 
-    <main id="portal">
+    <!-- <main id="portal">
 
         <section>
             <h1>Películas y series ilimitadas en un solo lugar</h1>
@@ -200,19 +212,31 @@
             </div>
         </section>
 
-    </main>
+    </main> -->
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="">Términos y condiciones</a></li>
-                <li><a href="">Preguntas frecuentes</a></li>
-                <li><a href="">Ayuda</a></li>
-                <li><a href="">Administrador Peliculas</a></li>
-            </ul>
-            <a href="#portal"><img src="./assets/img/flecha-hacia-arriba.png" alt="flecha-hacia-arriba"></a>
+        <nav class="navbar navbar-expand-lg" style="background-color:#9f3647;">
+            <div class="container-fluid my-4">
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="">Términos y condiciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="">Ayuda</a>
+                        </li>
+                        <li class="nav-item sombreado-texto">
+                            <a class="nav-link text-light" href="">Administrador Peliculas</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand mx-5 text-light" href="#portal"><img src="./assets/img/flecha-hacia-arriba.png" alt="flecha-hacia-arriba"></a>
+            </div>
         </nav>
-    </footer>
+    </footer> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
