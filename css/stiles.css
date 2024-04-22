@@ -5,6 +5,7 @@ header .nav-item:hover{
 
 .nav-item.boton-iniciar-sesion{
     background-color: #181419;
+    border-radius: 5px;
 }
 
 .boton-iniciar-sesion:hover{
@@ -13,4 +14,12 @@ header .nav-item:hover{
 
 .nav-item.sombreado-texto{
     background-color: #181419;
+    border-radius: 5px;
+}
+
+.fondo-inicio{
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
