@@ -92,6 +92,23 @@ header .nav-item:hover{
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
+.clase-contenedor::-webkit-scrollbar{
+    background: #232318;
+}
+
+.clase-contenedor::-webkit-scrollbar-thumb{
+    background: #9f3647;
+}
+
+body::-webkit-scrollbar{
+    width: 0.7rem;
+    background: #232318;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #9f3647;
+}
+
 hr{
     border: 1px solid #9f3647;
     width: 80%;
