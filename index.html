@@ -14,13 +14,13 @@
 
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color:#9f3647;">
-            <div class="container-fluid my-3 ">
+            <div class="container-fluid my-3 justify-content-center">
               <a class="navbar-brand mx-5 text-light" href="#">
                 <i class="fa fa-film" aria-hidden="true"></i>
                 <span>GranjaPelis</span></a>
               </a>
               <div class="navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto px-5 fs-5">
+                <ul class="navbar-nav ms-auto px-5 fs-5 text-center">
                     <li class="nav-item px-3">
                         <a class="nav-link text-light" href="#tendencias">Tendencias</a>
                     </li>
@@ -54,10 +54,10 @@
         </section>
 
         <section>
-            <div class="d-flex flex-column align-items-center p-5">
+            <div class="d-flex flex-column justify-content-center align-items-center p-5">
                 <h2 class="display-6">¿Qué estas buscando para ver?</h2>
-                <form class="d-flex p-5" role="search">
-                    <input class="form-control me-2 rounded-pill barra-busqueda" type="search" placeholder="Buscar..." aria-label="Search">
+                <form class="d-flex p-5 mx-auto" role="search">
+                    <input class="form-control me-2 px-4 rounded-pill barra-busqueda" type="search" placeholder="Buscar..." aria-label="Search">
                     <button class="btn btn-dark btn-lg rounded-pill boton-buscar" type="submit">Buscar</button>
                 </form>
             </div>
@@ -68,9 +68,9 @@
         <section id="tendencias">
             <h3 class="display-6 text-center p-4">Las tendencias de hoy</h3>
 
-            <div class="container text-center">
+            <div class="container">
 
-                <div class="row row-cols-6 row-col-1">
+                <div class="row row-cols-1 row-cols-xxl-6 row-cols-xl-6 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 ">
 
                     <div class="col my-4">
                         <div class="card">
@@ -157,10 +157,26 @@
 
         <hr>
 
-        <!-- <section>
-            <h3>Las más aclamadas</h3>
+        <section>
+            <h3 class="display-6 text-center p-4">Las más aclamadas</h3>
 
-            <div>
+            <div class="container">
+
+                <div class="row row-cols-6 p-4">
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./assets/img/aclamada_1.jpg" class="card-img-top" alt="aclamada_1">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <!-- <div>
                 <div>
                     <img src="./assets/img/aclamada_1.jpg" alt="aclamada_1" loading="lazy">
                 </div>
@@ -197,8 +213,8 @@
                 <div>
                     <img src="./assets/img/aclamada_12.jpg" alt="aclamada_12" loading="lazy">
                 </div>               
-            </div>
-        </section> -->
+            </div> -->
+        </section>
 
     </main>
 

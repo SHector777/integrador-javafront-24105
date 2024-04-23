@@ -98,3 +98,15 @@ hr{
     margin: 0 auto;
     margin-top: 40px;
 }
+
+@media(max-width: 768px){
+    .barra-busqueda{
+        width: 280px;
+    }
+}
+
+@media(max-width: 468px){
+    .barra-busqueda{
+        width: 150px;
+    }
+}
