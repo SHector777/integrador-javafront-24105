@@ -80,6 +80,18 @@ header .nav-item:hover{
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
+.boton-tendencias{
+    background-color: #9f3647;
+    border: 2px solid white;
+}
+
+.boton-tendencias:hover{
+    background-color:#9f3647;
+    border: 2px solid white;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
 hr{
     border: 1px solid #9f3647;
     width: 80%;
