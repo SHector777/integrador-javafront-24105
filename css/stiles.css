@@ -80,6 +80,10 @@ header .nav-item:hover{
     border: 0rem;
 }
 
+/* .peliculas-efecto-contenedor:hover{
+    backdrop-filter: blur(50px);
+} */
+
 .boton-tendencias{
     background-color: #9f3647;
     border: 2px solid white;
@@ -135,4 +139,13 @@ hr{
     .barra-busqueda{
         width: 150px;
     }
+}
+
+/* estilos especificos de paginas distintas al home */
+
+.body-fondo-formularios{
+    height: 100vh;
+    background:linear-gradient(to right top, #24242473,#24242473),url("../assets/img/bg-register.jpg");
+    background-size: cover;
+    background-position: center;
 }
