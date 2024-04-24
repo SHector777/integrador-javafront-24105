@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.body-fondo{
+    background-color: #232323;
+}
+
+header .nav-item:hover{
+    box-shadow: 0 0 10px #000003;
+    border-radius: 5px;
+}
+
+.nav-item.boton-iniciar-sesion{
+    background-color: #181419;
+    border-radius: 5px;
+}
+
+.boton-iniciar-sesion:hover{
+    background-color: #9f3647;
+}
+
+.nav-item.sombreado-texto{
+    background-color: #181419;
+    border-radius: 5px;
+}
+
+.fondo-inicio{
+    height: 90vh;
+}
+
+.portal-titulo-principal{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.portal-titulo-secundario{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.boton-registro{
+    background-color: #9f3647;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.boton-registro:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.barra-busqueda{
+    border: 0rem;
+    width: 500px;
+    box-shadow: none;
+    font-size: large;
+}
+
+.boton-buscar{
+    background-color: #9f3647;
+    border: 2px solid white;
+}
+
+.boton-buscar:hover{
+    background-color:#9f3647;
+    border: 2px solid white;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.peliculas-borde{
+    border: 0rem;
+}
+
+.boton-tendencias{
+    background-color: #9f3647;
+    border: 2px solid white;
+}
+
+.boton-tendencias:hover{
+    background-color:#9f3647;
+    border: 2px solid white;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.clase-contenedor::-webkit-scrollbar{
+    background: #232318;
+}
+
+.clase-contenedor::-webkit-scrollbar-thumb{
+    background: #9f3647;
+}
+
+body::-webkit-scrollbar{
+    width: 0.7rem;
+    background: #232318;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #9f3647;
+}
+
+/* Use esta misma clase para sacarle el borde de la caja por defecto - su uso principal era ponerle un pointer */
+.aclamada-pointer{
+    border: 0rem;
+}
+
+.aclamada-pointer:hover{
+    cursor: pointer;
+}
+
+hr{
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+@media(max-width: 768px){
+    .barra-busqueda{
+        width: 280px;
+    }
+}
+
+@media(max-width: 468px){
+    .barra-busqueda{
+        width: 150px;
+    }
+}
