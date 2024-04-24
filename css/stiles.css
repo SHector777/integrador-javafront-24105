@@ -29,11 +29,7 @@ header .nav-item:hover{
 }
 
 .fondo-inicio{
-    /* background-image: linear-gradient(to right top,#000008,#000008); */
     height: 90vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .portal-titulo-principal{
@@ -62,7 +58,7 @@ header .nav-item:hover{
 }
 
 .barra-busqueda{
-    border: 0;
+    border: 0rem;
     width: 500px;
     box-shadow: none;
     font-size: large;
@@ -78,6 +74,10 @@ header .nav-item:hover{
     border: 2px solid white;
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.peliculas-borde{
+    border: 0rem;
 }
 
 .boton-tendencias{
@@ -107,6 +107,15 @@ body::-webkit-scrollbar{
 
 body::-webkit-scrollbar-thumb{
     background: #9f3647;
+}
+
+/* Use esta misma clase para sacarle el borde de la caja por defecto - su uso principal era ponerle un pointer */
+.aclamada-pointer{
+    border: 0rem;
+}
+
+.aclamada-pointer:hover{
+    cursor: pointer;
 }
 
 hr{
