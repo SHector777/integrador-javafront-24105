@@ -6,7 +6,7 @@
 }
 
 .body-fondo{
-    background-color: #232323;
+    background-color: #212529;
 }
 
 header .nav-item:hover{
@@ -80,6 +80,21 @@ header .nav-item:hover{
     border: 0rem;
 }
 
+.peliculas-efecto{
+    opacity: 0;
+}
+
+.peliculas-efecto:hover{
+    opacity: 100;
+    backdrop-filter: blur(12px);
+}
+
+.efecto-zoom:hover{
+    transition: 0.5s;
+    transform: scale(0.9);
+    box-shadow: 0 0 15px #9f3647;
+}
+
 .boton-tendencias{
     background-color: #9f3647;
     border: 2px solid white;
@@ -134,5 +149,43 @@ hr{
 @media(max-width: 468px){
     .barra-busqueda{
         width: 150px;
+    }
+}
+
+/* estilos especificos de paginas distintas al home */
+
+.body-fondo-formularios{
+    height: 100vh;
+    background:linear-gradient(to right top, #24242473,#24242473),url("../assets/img/bg-register.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo-detalle{
+    height: 70vh;
+}
+
+@media (max-width: 768px){
+    .fondo-detalle{
+        height: 110vh;
+    }
+    .detalle-elementos{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1200px){
+    .seccion-2-detalle{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:576px){
+    .seccion-2-detalle{
+        width: auto;
+    }
+    .video-contenedor{
+        width: auto;
     }
 }
