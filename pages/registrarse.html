@@ -27,36 +27,47 @@
 
       <section>
 
-        <div class="container bg-dark justify-content-center">
-          <form>
-            <legend>Registro</legend>
-            <div class="mb-3">
-              <input type="text" id="nombre" class="form-control" placeholder="Nombre" name="nombre">
+        <div class="container d-flex flex-column justify-content-center align-items-center m-auto rounded-2 registro-contenedor">
+          <form class="w-100 p-5 registro-formulario m-auto" action="" method="">
+            <legend class="mb-4 display-6 fw-semibold">Registro</legend>
+            <div class="mb-3 input-group-lg">
+              <input type="text" id="nombre" class="form-control rounded-pill registro-input" required placeholder="Nombre" name="nombre">
             </div>
-            <div class="mb-3">
-              <input type="text" id="apellido" class="form-control" placeholder="Apellido" name="apellido">
+            <div class="mb-3 input-group-lg">
+              <input type="text" id="apellido" class="form-control rounded-pill registro-input" required placeholder="Apellido" name="apellido">
             </div>
-            <div class="mb-3">
-              <input type="email" id="email" class="form-control" placeholder="Email" name="email">
+            <div class="mb-3 input-group-lg">
+              <input type="email" id="email" class="form-control rounded-pill registro-input" required placeholder="Email" name="email">
             </div>
-            <div class="mb-3">
-              <input type="password" id="password" class="form-control" placeholder="Contraseña" name="password">
+            <div class="mb-3 input-group-lg">
+              <input type="password" id="password" class="form-control rounded-pill registro-input" required placeholder="Contraseña" name="password">
             </div>
-            <div class="mb-3">
-              <input type="date" id="fechaNacimiento" class="form-control" required placeholder="Fecha de Nacimiento (dd/mm/aaaa)" name="fechaNacimiento">
+            <div class="mb-3 input-group-lg">
+              <input type="date" id="fechaNacimiento" class="form-control rounded-pill registro-input" required placeholder="Fecha de Nacimiento (dd/mm/aaaa)" name="fechaNacimiento">
             </div>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>País</option>
-              <option value="AR">Argentina</option>
-              <option value="BO">Bolivia</option>
-              <option value="Br">Brasil</option>
-              <option value="CH">Chile</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
+            <div class="mb-3 input-group-lg">
+              <select class="form-select rounded-pill registro-input" aria-label="Default select example" required name="pais" id="pais">
+                <option selected value="">País</option>
+                <option value="AR">Argentina</option>
+                <option value="BO">Bolivia</option>
+                <option value="Br">Brasil</option>
+                <option value="CH">Chile</option>
+                <option value="CO">Colombia</option>
+                <option value="EC">Ecuador</option>
+                <option value="PY">Paraguay</option>
+                <option value="PE">Perú</option>
+                <option value="UY">Uruguay</option>
+                <option value="VE">Venezuela</option>
+              </select>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" required aria-disabled="false" id="terminos">
+              <label class="form-check-label" for="terminos"><small>Acepto términos y condiciones</small></label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 py-3 boton-enviar-registro">Registrarse</button>
+            <div class="position-absolute">
+              <a class="nav-link" href="#"><samp class="text-secondary fw-bold">Necesitas ayuda?</samp></a>
+            </div>
           </form>
         </div>
 
