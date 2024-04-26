@@ -1,3 +1,6 @@
+/* estilos de distintas paginas, comenzando desde index/homo a las distintas paginas hechas
+se utilizo "*" para darle un estilo base */
+
 *{
     margin: 0;
     padding: 0;
@@ -5,9 +8,13 @@
     font-family: 'Nunito', sans-serif;
 }
 
+/* color de fondo de index/home y otras paginas(detalle) */
+
 .body-fondo{
     background-color: #212529;
 }
+
+/* estilos de header y footer */
 
 header .nav-item:hover{
     box-shadow: 0 0 10px #000003;
@@ -27,6 +34,10 @@ header .nav-item:hover{
     background-color: #181419;
     border-radius: 5px;
 }
+
+/* estilos de main en index/home */
+
+/* seccion 1 - imagen de fondo - texto y boton estilo */
 
 .fondo-inicio{
     height: 90vh;
@@ -52,6 +63,8 @@ header .nav-item:hover{
     text-decoration: none;
 }
 
+/* estilos de botones en seccion 2 - barra de busqueda de peliculas - mas abajo esta su media query */
+
 .boton-registro:hover{
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
@@ -76,6 +89,8 @@ header .nav-item:hover{
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
+/* estilos de seccion 3 - peliculas en tendencia - efectos */
+
 .peliculas-borde{
     border: 0rem;
 }
@@ -95,6 +110,8 @@ header .nav-item:hover{
     box-shadow: 0 0 15px #9f3647;
 }
 
+/* botones en seccion 3 - las peliculas en tendencias - boton anterior y siguiente */
+
 .boton-tendencias{
     background-color: #9f3647;
     border: 2px solid white;
@@ -106,6 +123,8 @@ header .nav-item:hover{
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
+
+/* estilos de scroll en pantalla y en la seccion de mas aclamadas */
 
 .clase-contenedor::-webkit-scrollbar{
     background: #232318;
@@ -125,6 +144,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 /* Use esta misma clase para sacarle el borde de la caja por defecto - su uso principal era ponerle un pointer */
+/* seccion 4 de peliculas aclamadas - borde de card y reaccion al pasar el cursor */
+
 .aclamada-pointer{
     border: 0rem;
 }
@@ -133,12 +154,16 @@ body::-webkit-scrollbar-thumb{
     cursor: pointer;
 }
 
+/* estilo de hr de uso de division */
+
 hr{
     border: 1px solid #9f3647;
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
 }
+
+/* media query de seccion 2 - input del tipo search */
 
 @media(max-width: 768px){
     .barra-busqueda{
@@ -152,7 +177,9 @@ hr{
     }
 }
 
-/* estilos especificos de paginas distintas al home */
+/* estilos especificos de paginas */
+
+/* fondo de paginas de registro y inicio de sesion */
 
 .body-fondo-formularios{
     height: 100vh;
@@ -160,6 +187,117 @@ hr{
     background-size: cover;
     background-position: center;
 }
+
+/* estilos de la pagina registro */
+
+.registro-contenedor{
+    background:rgb(42, 42, 42);
+    height: 90vh;
+    width: 30%;
+}
+
+.registro-input{
+    background: #333333;
+    border: 2px solid #9f3647;
+    color: white;
+}
+
+.registro-input::placeholder{
+    color: gray;
+}
+
+.registro-input:hover{
+    background: #333333;
+    color: white;
+    border: 2px solid #9f3647;
+    box-shadow: none;
+}
+
+/* estilo del boton de la pagina registro - se uso el mismo para el boton de iniciar sesion en esa misma pagina */
+
+.boton-enviar-registro{
+    background: #9f3647;
+    border: 0rem;
+}
+
+.boton-enviar-registro:hover{
+    background: #9f3647;
+    cursor: default;
+}
+
+/* estilo de la pagina iniciar sesion - son los mis atributos que la pagina registros, pero distintas clases */
+
+.iniciar-sesion-contenedor{
+    background:rgb(42, 42, 42);
+    height: 90vh;
+    width: 30%;
+}
+
+.iniciar-sesion-input{
+    background: #333333;
+    border: 2px solid #9f3647;
+    color: white;
+}
+
+.iniciar-sesion-input::placeholder{
+    color: gray;
+}
+
+.iniciar-sesion-input:hover{
+    background: #333333;
+    color: white;
+    border: 2px solid #9f3647;
+    box-shadow: none;
+}
+
+/* media query de paginas de registro y de iniciar sesion */
+
+@media(max-width:1400px){
+    .registro-contenedor{
+        width: 35%;
+    }
+    .iniciar-sesion-contenedor{
+        width: 35%;
+    }
+}
+
+@media(max-width:1200px){
+    .registro-contenedor{
+        width: 40%;
+    }
+    .iniciar-sesion-contenedor{
+        width: 40%;
+    }
+}
+
+@media(max-width:992px){
+    .registro-contenedor{
+        width: 50%;
+    }
+    .iniciar-sesion-contenedor{
+        width: 50%;
+    }
+}
+
+@media(max-width:768px){
+    .registro-contenedor{
+        width: 65%;
+    }
+    .iniciar-sesion-contenedor{
+        width: 65%;
+    }
+}
+
+@media(max-width:576px){
+    .registro-contenedor{
+        width: 85%;
+    }
+    .iniciar-sesion-contenedor{
+        width: 85%;
+    }
+}
+
+/* pagina de detalle - primera seccion y media query utilizadas */
 
 .fondo-detalle{
     height: 70vh;
