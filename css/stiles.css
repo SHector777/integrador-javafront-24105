@@ -213,6 +213,13 @@ hr{
     box-shadow: none;
 }
 
+.registro-input:focus-visible{
+    background: #333333;
+    color: white;
+    border: 2px solid #9f3647;
+    box-shadow: none;
+}
+
 /* estilo del boton de la pagina registro - se uso el mismo para el boton de iniciar sesion en esa misma pagina */
 
 .boton-enviar-registro{
@@ -244,6 +251,13 @@ hr{
 }
 
 .iniciar-sesion-input:hover{
+    background: #333333;
+    color: white;
+    border: 2px solid #9f3647;
+    box-shadow: none;
+}
+
+.iniciar-sesion-input:focus-visible{
     background: #333333;
     color: white;
     border: 2px solid #9f3647;
